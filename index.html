@@ -3,141 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anne Confeitaria - Doces e Bolos Artesanais</title>
-<meta name="description" content="Anne Confeitaria: bolos, cupcakes, macarons, tortas e doces finos feitos à mão, com carinho, para tornar seus momentos mais doces.">
+<title>Doce Encanto Confeitaria</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body id="topo">
-
-<header>
+<body>
+<header id="topo">
+ <div class="nav">
+  <div class="logo">Doce Encanto</div>
   <nav>
-    <a class="logo" href="#topo">Anne Confeitaria</a>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#fotos">Doces</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
+   <a href="#sobre">Sobre</a>
+   <a href="#servicos">Serviços</a>
+   <a href="#fotos">Fotos</a>
+   <a href="#contato">Contato</a>
   </nav>
+ </div>
 </header>
 
 <section class="hero">
-  <div class="conteudo">
-    <h1>Doces que Encantam</h1>
-    <p>Na Anne Confeitaria, cada receita é feita à mão, com ingredientes selecionados e muito carinho. Do bolo de aniversário ao docinho da festa, cuidamos de cada detalhe: o recheio cremoso, a decoração delicada, o sabor que faz lembrar de casa. Conheça nossas criações e deixe seus momentos mais especiais ainda mais doces.</p>
-    <a class="btn btn-rosa" href="#sobre">Ver mais</a>
-  </div>
+ <h1>Doces Artesanais Feitos com Amor</h1>
+ <p>Bolos, tortas e doces finos preparados diariamente com ingredientes selecionados e muito carinho. Transformamos cada momento especial em uma experiência doce e inesquecível, do aniversário ao casamento.</p>
+ <a class="btn" href="#servicos">Ver mais</a>
 </section>
 
 <section class="sobre" id="sobre">
-  <h2>Sobre</h2>
-  <p>A Anne Confeitaria é uma confeitaria artesanal dedicada a bolos, doces finos, tortas e sobremesas para todas as ocasiões. Nosso trabalho une técnica, criatividade e afeto para entregar produtos bonitos e deliciosos, preparados na hora e com ingredientes de qualidade. Atendemos aniversários, casamentos, eventos corporativos, encomendas para presentear e quem simplesmente quer adoçar o dia.</p>
-  <p>Trabalhamos com receitas tradicionais e sabores autorais, sempre ouvindo o que você sonha para a sua festa. Cada encomenda é única, pensada no tema, no gosto e no tamanho do seu evento.</p>
-  <a class="btn btn-claro" href="#contato">Fazer Encomenda</a>
+ <h2>Sobre</h2>
+ <p style="margin-left:auto;margin-right:auto">A Doce Encanto nasceu da paixão por confeitaria e do desejo de adoçar a vida das pessoas. Com receitas tradicionais e toques de criatividade, entregamos produtos frescos, bonitos e deliciosos para festas, presentes ou para aquele café da tarde especial.</p>
+ <a class="btn" href="#contato">Contatar Agora</a>
 </section>
 
 <section class="servicos" id="servicos">
-  <h2>Serviços</h2>
-  <div class="grade-servicos">
-
-    <div class="servico">
-      <!-- Bolo -->
-      <svg viewBox="0 0 48 48" fill="none" stroke="#7a1f45" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-        <rect x="7" y="26" width="34" height="16" rx="2" fill="#e87fa5"/>
-        <rect x="12" y="16" width="24" height="10" rx="2" fill="#fbd0df"/>
-        <path d="M7 32c4 3 7-3 11 0s7-3 11 0 8-3 12 0" fill="none"/>
-        <path d="M24 16v-6"/>
-        <path d="M24 5c2 2 2 4 0 5-2-1-2-3 0-5z" fill="#f3c04c"/>
-      </svg>
-      <h3>Bolos Personalizados</h3>
-      <p>Bolos de aniversário, casamento e comemorações, com recheios cremosos, massas fofinhas e decoração feita sob medida para o seu tema.</p>
-    </div>
-
-    <div class="servico">
-      <!-- Cupcake -->
-      <svg viewBox="0 0 48 48" fill="none" stroke="#7a1f45" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-        <path d="M11 24h26l-3 18H14z" fill="#e87fa5"/>
-        <path d="M14 24c-3 0-5-3-3-6 1-3 4-4 6-3 1-4 5-6 8-5 4 0 6 3 7 5 3 0 5 3 4 6 0 2-2 3-4 3z" fill="#fbd0df"/>
-        <circle cx="24" cy="8" r="3" fill="#d83a56"/>
-        <path d="M18 28l2 11M24 28v11M30 28l-2 11" />
-      </svg>
-      <h3>Cupcakes e Docinhos</h3>
-      <p>Cupcakes, brigadeiros, beijinhos e trufas feitos à mão, em sabores clássicos e especiais, ideais para festas, lembrancinhas e presentes.</p>
-    </div>
-
-    <div class="servico">
-      <!-- Torta (fatia) -->
-      <svg viewBox="0 0 48 48" fill="none" stroke="#7a1f45" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-        <path d="M5 34L40 14c3 7 3 14-2 20z" fill="#fbd0df"/>
-        <path d="M5 34h33c0 5-3 8-8 8H13c-5 0-8-3-8-8z" fill="#e87fa5"/>
-        <circle cx="19" cy="25" r="3" fill="#d83a56"/>
-        <circle cx="29" cy="21" r="3" fill="#d83a56"/>
-        <circle cx="32" cy="28" r="2.5" fill="#d83a56"/>
-      </svg>
-      <h3>Tortas e Sobremesas</h3>
-      <p>Tortas de frutas, mousses, cheesecakes e sobremesas em taças, com sabores frescos e equilibrados para fechar qualquer refeição com chave de ouro.</p>
-    </div>
-
-    <div class="servico">
-      <!-- Caixa de presente -->
-      <svg viewBox="0 0 48 48" fill="none" stroke="#7a1f45" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-        <rect x="6" y="18" width="36" height="9" rx="1.5" fill="#e87fa5"/>
-        <rect x="9" y="27" width="30" height="16" rx="1.5" fill="#fbd0df"/>
-        <path d="M24 18v25"/>
-        <path d="M24 18c-4-8-12-6-9-1 1 1 5 1 9 1zM24 18c4-8 12-6 9-1-1 1-5 1-9 1z" fill="#fbd0df"/>
-      </svg>
-      <h3>Encomendas para Festas</h3>
-      <p>Mesas de doces, caixas presenteáveis e kits para eventos, com embalagem caprichada e entrega combinada para o dia da sua comemoração.</p>
-    </div>
-
-  </div>
+ <h2>Serviços</h2>
+ <div class="grid4">
+  <div class="serv"><div class="ico">🎂</div><h3>Bolos Personalizados</h3><p>Bolos sob medida para aniversários, casamentos e eventos, com recheios e decorações à sua escolha.</p></div>
+  <div class="serv"><div class="ico">🧁</div><h3>Doces Finos</h3><p>Brigadeiros gourmet, trufas e bem-casados feitos à mão com chocolates de alta qualidade.</p></div>
+  <div class="serv"><div class="ico">🍰</div><h3>Tortas e Sobremesas</h3><p>Tortas, cheesecakes e sobremesas em taça, perfeitas para qualquer ocasião.</p></div>
+  <div class="serv"><div class="ico">🎉</div><h3>Mesas de Festa</h3><p>Montagem completa de mesas de doces para festas, com variedade e apresentação impecável.</p></div>
+ </div>
 </section>
 
 <section class="fotos" id="fotos">
-  <h2>Nossos Doces</h2>
-  <p class="intro">Bolos, cupcakes, macarons, tortas e docinhos feitos com carinho.</p>
-  <div class="galeria">
-    <img src="imagens/bolo-1.jpeg" alt="Bolo de aniversário rosa decorado" loading="lazy">
-    <img src="imagens/cupcakes.jpeg" alt="Cupcakes decorados com cobertura rosa e vermelha" loading="lazy">
-    <img src="imagens/macarons.jpeg" alt="Macarons coloridos sobre fundo rosa" loading="lazy">
-    <img src="imagens/torta.jpeg" alt="Torta de morangos com creme" loading="lazy">
-    <img src="imagens/brigadeiro.jpeg" alt="Doces de brigadeiro" loading="lazy">
-    <img src="imagens/bolo-2.jpeg" alt="Bolo elegante decorado com flores rosas" loading="lazy">
-  </div>
+ <h2>Fotos</h2>
+ <div class="galeria">
+  <!-- Fotos: Unsplash (licença gratuita). Para trocar, altere o src de cada img. -->
+  <div class="g1" role="img" aria-label="Bolo decorado"><img src="https://images.unsplash.com/photo-1600653155864-88227b5b64b0?auto=format&fit=crop&q=70&w=800" alt="Bolo colorido" loading="lazy"></div>
+  <div class="g2" role="img" aria-label="Doces finos"><img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&q=70&w=800" alt="Cupcake de chocolate" loading="lazy"></div>
+  <div class="g3" role="img" aria-label="Tortas"><img src="https://images.unsplash.com/photo-1611692276815-cd6efa0b2dac?auto=format&fit=crop&q=70&w=800" alt="Cupcakes coloridos" loading="lazy"></div>
+  <div class="g4" role="img" aria-label="Cupcakes"><img src="https://images.unsplash.com/photo-1549008090-b22ad7d5999f?auto=format&fit=crop&q=70&w=800" alt="Trufas de chocolate" loading="lazy"></div>
+ </div>
 </section>
 
-<section class="rodape" id="contato">
-  <ul class="contato">
-    <li>
-      <svg viewBox="0 0 24 24" fill="#3a1424" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
-      Faculdade Senac Recife
-    </li>
-    <li>
-      <svg viewBox="0 0 24 24" fill="#3a1424" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>
-      <a href="tel:+5581988123456">(81) 98812-3456</a>
-    </li>
-    <li>
-      <svg viewBox="0 0 24 24" fill="#3a1424" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v.5l-10 6.5L2 6.5V6a1 1 0 011-1zm-1 3.4l10 6.5 10-6.5V18a1 1 0 01-1 1H3a1 1 0 01-1-1z"/></svg>
-      <a href="mailto:contato@anneconfeitaria.com.br">contato@anneconfeitaria.com.br</a>
-    </li>
+<footer id="contato">
+ <div class="fgrid">
+  <ul>
+   <li>📍 Rua das Flores, 123 - Recife - PE</li>
+   <li>📞 <a href="tel:+5581999999999">(81) 99999-9999</a></li>
+   <li>✉️ <a href="mailto:contato@doceencanto.com">contato@doceencanto.com</a></li>
   </ul>
-
-  <div class="empresa">
-    <h3>Sobre a companhia</h3>
-    <p>A Anne Confeitaria nasceu do amor pela cozinha e do desejo de transformar açúcar, farinha e criatividade em momentos felizes. Nossa missão é levar sabor e afeto para a mesa das pessoas, com doces bonitos, honestos e preparados com responsabilidade.</p>
-    <p>Acreditamos que um bom doce une as pessoas. Por isso, cuidamos de cada etapa, da escolha dos ingredientes à embalagem final, para que cada encomenda chegue perfeita à sua festa.</p>
-    <div class="redes">
-      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="#3a1424" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 8h-2a2 2 0 00-2 2v11M9 13h6" /></svg></a>
-      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#3a1424" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#3a1424"/></svg></a>
-      <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="#3a1424" stroke-width="2" stroke-linejoin="round"><path d="M4 20l1.3-4.2A8 8 0 1112 20a8 8 0 01-3.9-1z"/><path d="M9 8.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .7c-.8-.4-1.5-1.1-1.9-1.9l.7-1-1-2z"/></svg></a>
-    </div>
+  <div class="col2">
+   <h3>Sobre a confeitaria</h3>
+   <p>Doces artesanais, bolos personalizados e sobremesas feitas com ingredientes frescos. Encomende o seu e faça o seu dia ainda mais doce.</p>
+   <div class="social"><span>f</span><span>◎</span><span>in</span></div>
   </div>
-</section>
-
-<div class="base">
-  Desenvolvido por Alline Anne
+ </div>
+ <div class="bar" style="margin:30px -20px -20px">
+  Desenvolvido por Doce Encanto
   <a href="#topo">Voltar para o topo</a>
-</div>
-
+ </div>
+</footer>
 </body>
 </html>
