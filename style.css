@@ -1,0 +1,71 @@
+:root { --fundo: #fde8ef; --rosa: #f6b8cd; --escuro: #7a1f45; --texto: #3a1424; --icone: #e87fa5; --icone-escuro: #b8456f; --claro: #fff3f7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--texto); background: var(--fundo); }
+a { color: inherit; }
+
+/* Menu */
+header { background: var(--rosa); position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 56px; }
+.logo { font-family: "Times New Roman", serif; font-size: 24px; color: var(--escuro); text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 8vw; }
+nav ul a { color: var(--escuro); text-decoration: none; font-size: 13px; font-weight: bold; }
+nav ul a:hover { text-decoration: underline; }
+
+/* Banner */
+.hero { position: relative; min-height: 440px; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
+        background: url("imagens/banner.jpeg") center/cover no-repeat; background-color: #c4577f; }
+.hero::before { content: ""; position: absolute; inset: 0; background: rgba(70,15,40,.55); }
+.hero .conteudo { position: relative; max-width: 900px; padding: 40px 20px; }
+.hero h1 { font-size: 28px; margin-bottom: 28px; }
+.hero p { font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
+
+.btn { display: inline-block; padding: 10px 18px; font-size: 12px; border: none; cursor: pointer; text-decoration: none; }
+.btn-rosa { background: var(--escuro); color: #fff; }
+.btn-claro { background: var(--escuro); color: #fff; border-radius: 2px; }
+
+/* Sobre */
+.sobre { background: var(--rosa); color: var(--escuro); text-align: center; padding: 22px 20px 20px; }
+.sobre h2 { font-size: 20px; margin-bottom: 18px; }
+.sobre p { max-width: 1000px; margin: 0 auto 16px; font-size: 14px; line-height: 1.5; }
+
+/* Serviços */
+.servicos { text-align: center; padding: 20px 20px 40px; }
+.servicos h2 { font-size: 18px; margin-bottom: 40px; }
+.grade-servicos { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.servico svg { width: 38px; height: 38px; margin-bottom: 14px; }
+.servico h3 { font-size: 14px; margin-bottom: 10px; }
+.servico p { font-size: 13px; line-height: 1.4; max-width: 210px; margin: 0 auto; }
+
+/* Fotos */
+.fotos h2 { text-align: center; font-size: 14px; padding: 14px 0 4px; }
+.fotos .intro { text-align: center; font-size: 13px; padding: 0 20px 12px; }
+.galeria { display: grid; grid-template-columns: repeat(2, 1fr); }
+.galeria img { width: 100%; height: 100%; aspect-ratio: 16/8; object-fit: cover; display: block; background: #f9d3e0; }
+
+/* Rodapé */
+.rodape { max-width: 1000px; margin: 0 auto; padding: 36px 20px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.contato { font-size: 13px; padding-left: 40px; }
+.contato li { list-style: none; display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.contato svg { width: 14px; height: 14px; flex: none; }
+.contato a { color: #9c2a5a; }
+.empresa { text-align: center; }
+.empresa h3 { font-size: 15px; margin-bottom: 10px; }
+.empresa p { font-size: 13px; line-height: 1.45; max-width: 320px; margin: 0 auto 12px; text-align: left; }
+.redes { display: flex; gap: 8px; max-width: 320px; margin: 0 auto; }
+.redes a { display: inline-flex; width: 20px; height: 20px; }
+.redes svg { width: 100%; height: 100%; }
+
+.base { background: var(--rosa); color: var(--escuro); text-align: center; font-size: 12px; padding: 6px 0 8px; line-height: 1.9; }
+.base a { display: block; color: var(--escuro); }
+
+@media (max-width: 800px) {
+  nav ul { gap: 20px; }
+  .logo { font-size: 18px; }
+  .grade-servicos { grid-template-columns: repeat(2, 1fr); row-gap: 30px; }
+  .galeria { grid-template-columns: 1fr; }
+  .rodape { grid-template-columns: 1fr; }
+  .contato { padding-left: 0; }
+  .empresa { text-align: left; }
+  .empresa p, .redes { margin-left: 0; }
+}
